@@ -1,5 +1,5 @@
 class Chef
-  NOT_PASSED = Object.new if !defined?(NOT_PASSED)
+  #NOT_PASSED = Object.new if !defined?(NOT_PASSED)
   # Earlier versions of Chef didn't have this message
   module ChefCompatDeprecation
     def log_deprecation(message, location=nil)
@@ -26,8 +26,8 @@ class Chef
     end
   end
 
-  class<<self
-    prepend ChefCompatDeprecation
-  end
+  #class<<self
+  #  prepend ChefCompatDeprecation
+  #end
 
 end
